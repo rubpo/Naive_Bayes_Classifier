@@ -16,10 +16,6 @@ import math
 
 
 def read_data(filename):
-    """
-    Read data 'line by line', using generators.
-    Generators make it easier to process BIG text files.
-    """
     with open(filename, 'r',encoding="utf8", errors='ignore') as input:
         for line in input:
             yield line
